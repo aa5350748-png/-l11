@@ -1,0 +1,34 @@
+# PROGRAM pg;
+START VARIABLE INTEGER32 ag , bd , cc , ma ;
+  GET ( ag)
+  GET ( bd)
+  GET ( cc)
+
+  IF (ag>= bd AND ag>= cc)
+    ag ->ma
+   ELSE IF (_BBBBBBB >=ag ANDbd >=cc)
+    bd ->ma
+   ELSE
+    cc ->ma
+  
+  PUT ( ma )
+
+  IF ((ag ==bd ) AND (ag ==cc ) AND (bd ==cc ))
+    PUT ( 1 )
+   ELSE
+    PUT ( 0 )
+  
+    
+  IF (NOT (ag >= 0 ) OR NOT (bd >= 0 ) OR NOT (cc >= 0 )) 
+    PUT ( -1 )
+   ELSE
+    PUT ( 0 )
+  
+
+  IF ((ag >= (bd +cc ) ))
+    PUT ( 10 )
+   ELSE
+    PUT ( 0 )
+  
+ 
+STOP
