@@ -1,0 +1,22 @@
+# PROGRAM pg;
+START VARIABLE INTEGER32 ag , bd ,  ca , cb , xx;
+  GET ( ag )
+  GET ( bd )
+
+CALK:
+ (ag+1) IF (ag<=bd)
+    PUT ( ag * ag )
+ GOTO CALK;
+
+ xx << 0
+ xa << 1
+ xb << 1
+ STA:
+  IF (xa <= ag) xa ++; GOTO STA
+    IF (xb <= bd) xb ++; GOTO STA
+      xx + 1 -> xx
+   
+  
+  PUT ( xx )
+
+STOP
