@@ -8,9 +8,9 @@ CALK:
     PUT ( ag * ag )
  GOTO CALK;
 
- xx << 0
- xa << 1
- xb << 1
+ xx = 0
+ xa = 1
+ xb = 1
  STA:
   IF (xa <= ag) xa ++; GOTO STA
     IF (xb <= bd) xb ++; GOTO STA
