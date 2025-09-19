@@ -1,0 +1,14 @@
+# PROGRAM pg;
+START VARIABLE INTEGER32 ag , bd , cc , xx, yy ;
+  GET ( ag)
+  GET ( bd)
+ PUT (ag+bd)
+PUT (ag- bd)
+PUT (ag *bd)
+PUT (ag DIV bd)
+PUT (ag MOD bd)
+(ab-cd)*10 + (ab+bd) DIV 10 -> xx
+xx+ xx MOD 10 -> yy
+PUT (xx);
+PUT (yy);
+STOP
