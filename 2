@@ -4,8 +4,8 @@ START VARIABLE INTEGER32 ag , bd ,  ca , cb , xx;
   GET ( bd )
 
 CALK:
- (ag+1) IF (ag<=bd)
-    PUT ( ag * ag )
+ (ag+1) IF ag<=bd
+    {PUT ( ag * ag )}
  GOTO CALK;
 
  xx = 0
