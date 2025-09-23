@@ -1,43 +1,46 @@
 # PROGRAM pg;
 START VARIABLE INTEGER32 aa , bb ,  ca , cb , xx, hh;
-  GET ( aa );
-  GET ( bb );
-  aa->cb;   
-  la:
+
+  GET (aa);
+  GET (bb);
   
+  aa->cb;   
+  
+la:
   IF cb >= bb + 1 
   {
-    GOTO lb;
+     GOTO lb;
   }
 
-    PUT(cb*cb);
-    cb+1->cb;
-    GOTO la;
-  lb:
-   1->ca;
-
-  la:
+  PUT(cb*cb);
+  cb+1->cb;
+  GOTO la;
   
+lb:
+  1->ca;
+
+ls:
   IF ca >= aa + 1 
   {
-    GOTO lb;
+     GOTO lb;
   }
     
-  1->cb;   
-  lc:
+  1->cb;  
   
-    IF cb >= bb + 1
-    {
+lc:
+  IF cb >= bb + 1
+  {
      GOTO ld;
-    }
-    xx + 1 -> xx;
-    cb+1->cb;
-    GOTO lc;
-   ld:
-     ca+1->ca;
-     GOTO la;
-   lb:
-   
-  PUT ( xx );
+  }
+  
+  xx+1->xx;
+  cb+1->cb;
+  GOTO lc;
+  
+ld:
+  ca+1->ca;
+  GOTO ls;
+lb:
+   PUT (xx);
 
 STOP
