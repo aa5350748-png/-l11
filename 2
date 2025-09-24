@@ -22,7 +22,7 @@ lb:
 ls:
   IF ca >= aa + 1 
   {
-     GOTO lb;
+     GOTO lk;
   }
     
   1->cb;  
@@ -40,7 +40,7 @@ lc:
 ld:
   ca+1->ca;
   GOTO ls;
-lb:
+lk:
    PUT (xx);
 
 STOP
