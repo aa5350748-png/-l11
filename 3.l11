@@ -1,5 +1,5 @@
 # PROGRAM pg;
-START VARIABLE INTEGER32 aa , bb ,  ca , cb , xx, hh;
+START VARIABLE INTEGER32 aa , bb ,  ca , cb , xx;
 
   GET (aa);
   GET (bb);
